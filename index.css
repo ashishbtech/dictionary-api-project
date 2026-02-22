@@ -1,0 +1,176 @@
+/* Yaha hum Poppins font use kar rahe hain for modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===== Reset Default Browser Styling ===== */
+/* Browser ke default margin/padding ko remove kar rahe hain */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Better layout control ke liye */
+}
+
+/* ===== Body Styling ===== */
+/* Yaha main multi-color animated gradient use kar raha hoon */
+body {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+
+    /* 6+ colors ka gradient for vibrant look */
+    background: linear-gradient(
+        -45deg,
+        #ff6b6b,  /* Red-Pink */
+        #feca57,  /* Yellow */
+        #48dbfb,  /* Light Blue */
+        #1dd1a1,  /* Teal Green */
+        #5f27cd,  /* Purple */
+        #ff9ff3   /* Soft Pink */
+    );
+
+    /* Animation ke liye background size bada rakha hai */
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+/* ===== Background Animation ===== */
+/* Yeh smooth color shifting effect deta hai */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== Main Container ===== */
+/* Glassmorphism effect yaha apply ho raha hai */
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 35px 30px;
+    border-radius: 18px;
+
+    /* Transparent white for glass effect */
+    background: rgba(255, 255, 255, 0.15);
+
+    /* Blur effect jo glass look deta hai */
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: white;
+
+    transition: 0.4s ease; /* Smooth hover effect */
+}
+
+/* Thoda hover animation for premium feel */
+.container:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+/* ===== Heading Styling ===== */
+/* Yaha gradient text use kar rahe hain for modern UI */
+.heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    background: linear-gradient(90deg, #ffffff, #ffeaa7, #ff9ff3);
+
+    /* Gradient ko text ke andar clip karne ke liye */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Text transparent karna zaroori hai */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Input Field ===== */
+/* Clean white input taaki readable ho */
+.input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+
+    transition: 0.3s ease;
+}
+
+/* Focus karne par glow effect */
+.input:focus {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+}
+
+/* Placeholder text thoda soft color me */
+.input::placeholder {
+    color: #777;
+}
+
+/* ===== Info Text ===== */
+/* Small instruction text */
+.info-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #f1f2f6;
+}
+
+/* ===== Meaning Container ===== */
+/* Initially hidden rahega jab tak word search na ho */
+.meaning-container {
+    margin-top: 25px;
+    display: none; /* JS ke through show hoga */
+    text-align: left;
+
+    /* Slight transparent background */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Paragraph spacing for readability */
+.meaning-container p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Word title highlight */
+.title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #ffeaa7; /* Yellow highlight */
+}
+
+/* Meaning text normal white */
+.meaning {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* ===== Audio Player Styling ===== */
+/* Full width taaki clean lage */
+audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* ===== Responsive Design ===== */
+/* Mobile ke liye thoda spacing kam */
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+}
