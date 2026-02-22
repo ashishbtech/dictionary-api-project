@@ -1,72 +1,63 @@
 # 📖 Dictionary API Project
 
-This repository will contain a Dictionary Web Application that I will build using HTML, CSS, and JavaScript.
+A Dictionary Web Application built using HTML, CSS, and JavaScript.
 
-This project will mark my first step into working with real-world APIs and dynamic data rendering.
+This is my first API-based project where I implemented real-time data fetching and dynamic content rendering using a public Dictionary API.
 
 ---
 
-## 🚀 Project Overview
-
-The Dictionary App will allow users to:
+## 🚀 Features
 
 - Search for any English word
-- View meanings and definitions
-- See part of speech (noun, verb, adjective, etc.)
-- Display phonetics (if available)
-- Show example sentences
-- Handle errors for invalid or unknown words
-
-The application will fetch live data from a public Dictionary API.
+- Fetch real-time word data from an API
+- Display meanings and definitions
+- Show part of speech
+- Display example sentences (if available)
+- Error handling for invalid or unknown words
 
 ---
 
-## 🛠️ Technologies That Will Be Used
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript 
+- JavaScript (ES6+)
+- Fetch API
+- Async/Await
 - Public Dictionary API
 
 ---
 
-## 📚 What I Aim to Learn Through This Project
+## 📚 What I Learned
 
-Through building this project, I will:
+Through this project, I practiced and improved:
 
-- Understand how APIs work
-- Practice using Fetch API
-- Work with JSON data
-- Strengthen DOM manipulation skills
-- Implement error handling using try/catch
-- Improve UI structuring and responsiveness
+- API integration using Fetch
+- Working with JSON data
+- Async/Await handling
+- DOM manipulation
+- Error handling with try/catch
+- Rendering dynamic content
 
-This project will help me transition from basic JavaScript projects to API-based applications.
-
----
-
-## 🎯 Future Enhancements (Planned)
-
-After completing the basic version, I plan to:
-
-- Add audio pronunciation feature
-- Implement dark mode
-- Add loading animation
-- Include search history
-- Improve UI design and animations
-- Optimize for mobile responsiveness
+This project marks my transition from basic JavaScript projects to real-world API-based applications.
 
 ---
 
-## 📈 Learning Journey
+## 🎨 UI & Styling
 
-This project is part of my journey to become a confident Frontend Developer.
+The current version focuses primarily on functionality and API integration.
 
-I will continue updating this repository as I improve the application and enhance its features.
+I will continue improving:
+- UI design
+- Styling structure
+- Animations and responsiveness
+- Overall visual polish
+
+Future updates will enhance the user experience and design quality.
 
 ---
 
-## ⭐ Status
+## 📈 Status
 
-Currently in development.
-Will be updated as progress continues.
+Core functionality completed ✅  
+UI improvements and refinements coming soon 🚀
